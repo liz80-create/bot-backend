@@ -1,0 +1,9 @@
+# requirements.txt
+fastapi
+uvicorn
+gunicorn
+psycopg2-binary
+google-generativeai
+python-dotenv
+aiohttp
+certifi

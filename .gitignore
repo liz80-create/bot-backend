@@ -1,0 +1,25 @@
+# Environment variables
+# Never commit your secrets!
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment folders
+# If you create a venv, you don't want it in git
+venv/
+.env/
+.venv/
+
+# IDE and editor directories
+.idea/
+.vscode/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
