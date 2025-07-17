@@ -105,7 +105,7 @@ class GeminiManager:
     def __init__(self, api_key: str):
         if not api_key: raise ValueError("Gemini API key required.")
         genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.0-flash')
 
     async def generate_sql_query(self, user_query: str, flow: str, table_schema: str) -> str:
         """Generates a full SQL query using a flow-specific prompt."""
