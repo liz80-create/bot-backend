@@ -185,7 +185,7 @@ You are an expert PostgreSQL query generator for a Festival Events database. Con
 # --- FastAPI Application Setup ---
 app = FastAPI()
 config = Config()
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["https://bot-frontend-sigma.vercel.app"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 db_manager = NeonDBManager(config.NEON_DB_URL)
 gemini_manager = GeminiManager(config.GEMINI_API_KEY)
 TABLE_SCHEMA = ""
